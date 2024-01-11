@@ -10,7 +10,7 @@ export default function Navigation() {
                 <li>About</li>
                 <li>Contact</li>
             </ul>
-            <button>Login</button>
+            <button className="primary-btn">Login</button>
         </nav>
     );
 }
