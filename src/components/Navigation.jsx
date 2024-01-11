@@ -1,7 +1,9 @@
 export default function Navigation() {
     return (
         <nav>
-            <div className="logo">BRAND Logo</div>
+            <div className="logo">
+                <img src="/images/brand_logo.png" alt="Brand Logo" />
+            </div>
             <ul>
                 <li>Home</li>
                 <li>Location</li>
