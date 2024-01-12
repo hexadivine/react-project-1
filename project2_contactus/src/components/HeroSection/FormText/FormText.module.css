@@ -1,0 +1,11 @@
+.form_text h1 {
+    max-width: 975px;
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.form_text p {
+    max-width: 975px;
+    color: gray;
+    font-weight: 600;
+}
