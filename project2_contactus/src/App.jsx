@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Navigation from "./components/Navigation";
 
 function App() {
-  return (
-    <div>App</div>
-  )
+    return (
+        <div>
+            <Navigation />
+        </div>
+    );
 }
 
-export default App
+export default App;
