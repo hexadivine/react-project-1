@@ -3,7 +3,7 @@ import style from "./FormText.module.css";
 
 function FormText() {
     return (
-        <div className={`container ${style.form_text}`}>
+        <div className={`${style.form_text}`}>
             <h1>CONTACT US</h1>
             <p>
                 LET’S CONNECT: WE’RE HERE TO HELP, AND WE’D LOVE TO HEAR FROM
