@@ -39,5 +39,9 @@
     display: flex;
     align-content: end;
     justify-content: end;
-    
+}
+
+.form_control input, .form_control textarea {
+    padding: 10px;
+    font-size: 20px;
 }
