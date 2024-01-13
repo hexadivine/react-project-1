@@ -16,6 +16,10 @@ function Form() {
         console.log("Via email clicked");
     }
 
+    function onSubmit(event) {
+        event.preventDefault();
+    }
+
     return (
         <div className={style.container}>
             <div className={style.form}>
@@ -42,7 +46,7 @@ function Form() {
                     />
                 </div>
 
-                <form action="">
+                <form action="" onSubmit={onSubmit}>
                     <div className={style.form_control}>
                         <label htmlFor="name">Name</label>
                         <input type="text" id="name" autoComplete="on" />
