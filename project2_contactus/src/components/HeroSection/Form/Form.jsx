@@ -4,6 +4,8 @@ import Button from "./Button/Button";
 import NotificationMessage from "../../NotificationMessage/NotificationMessage";
 
 import { BiSolidMessageAltDetail } from "react-icons/bi";
+import { IoCallSharp } from "react-icons/io5";
+import { MdEmail } from "react-icons/md";
 
 function Form() {
     const [showMsg, setShowMsg] = useState(false);
@@ -58,9 +60,7 @@ function Form() {
                             />
                             <Button
                                 text={"VIA CALL"}
-                                icon={
-                                    <BiSolidMessageAltDetail fontSize="24px" />
-                                }
+                                icon={<IoCallSharp fontSize="24px" />}
                                 isPrimary={true}
                                 onClick={onViaCall}
                             />
@@ -68,7 +68,7 @@ function Form() {
 
                         <Button
                             text={"VIA EMAIL FORM"}
-                            icon={<BiSolidMessageAltDetail fontSize="24px" />}
+                            icon={<MdEmail fontSize="24px" />}
                             onClick={onViaEmail}
                         />
                     </div>
