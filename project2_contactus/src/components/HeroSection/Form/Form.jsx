@@ -18,6 +18,10 @@ function Form() {
 
     function onSubmit(event) {
         event.preventDefault();
+        const name = event.target[0].value;
+        const email = event.target[1].value;
+        const text = event.target[2].value;
+        console.log(name, email, text);
     }
 
     return (
