@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import HomePage from "./HomePage/HomePage";
+import HomePage from "./Components/HomePage";
+import GamePage from "./Components/GamePage";
 
 function App() {
+    const [startGame, setStartGame] = useState(false);
+
     return (
         <div>
-            <HomePage />
+            {startGame ? (
+                <GamePage />
+            ) : (
+                <HomePage startGame={() => setStartGame(true)} />
+            )}
         </div>
     );
 }
