@@ -1,6 +1,7 @@
 import React from "react";
-import { Container } from "./styled/HomePage.module";
+import { Interact } from "./styled/HomePage.module";
 import { Button } from "../styled/Button.module";
+import { Container } from "../styled/Container.module";
 
 function HomePage({ startGame }) {
     return (
@@ -8,10 +9,10 @@ function HomePage({ startGame }) {
             <div className="dice_img">
                 <img src="/images/dices.png" alt="dices" />
             </div>
-            <div className="interact">
+            <Interact>
                 <h1>DICE GAME</h1>
                 <Button onClick={startGame}>Play Now</Button>
-            </div>
+            </Interact>
         </Container>
     );
 }
