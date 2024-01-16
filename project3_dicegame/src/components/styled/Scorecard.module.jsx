@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const ScoreCard = styled.div`
-    text-align: center;
     .score {
-        font-size: 100px;
+        font-size: 60px;
         font-weight: 500;
-        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .your_score {
