@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import { NumberSelectorDiv, Box } from "./styled/NumberSelector.module";
+import { nums } from "../config/dices.module";
 
-function NumberSelector() {
-    const [selectedNum, setSelectedNum] = useState();
-    const nums = [1, 2, 3, 4, 5, 6];
-
+function NumberSelector(props) {
     return (
         <NumberSelectorDiv>
+            <div className="error_msg">{props.errorMsg}</div>
             <div className="numbers">
                 {nums.map((num, index) => (
                     <Box
                         key={index}
-                        onClick={() => setSelectedNum(num)}
-                        selected={num === selectedNum}
+                        onClick={() => props.setSelectedDiceNum(num)}
+                        selected={num === props.selectedDiceNum}
                     >
                         {num}
                     </Box>
