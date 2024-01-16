@@ -11,7 +11,9 @@ function HomePage({ startGame }) {
             </div>
             <Interact>
                 <h1>DICE GAME</h1>
-                <Button onClick={startGame}>Play Now</Button>
+                <Button $type="primary" $animation="true" onClick={startGame}>
+                    Play Now
+                </Button>
             </Interact>
         </Container>
     );
